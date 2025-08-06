@@ -1,4 +1,4 @@
-# Go Project Template
+# Flashacrds
 
 A comprehensive Go project template with REST API functionality, PostgreSQL database integration, and Supabase local development setup. This template is designed to be used throughout the course as a starting point for building Go applications.
 
