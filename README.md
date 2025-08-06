@@ -45,13 +45,15 @@ The application will start on `http://localhost:8080` (or the port specified in 
 ## Available Commands
 
 ### Application Commands
+
 - `make build` - Build the application binary
 - `make run` - Run the application directly
 - `make clean` - Clean build artifacts
 
 ### Database Commands
+
 - `make db-start` - Start Supabase local development
-- `make db-stop` - Stop Supabase local development  
+- `make db-stop` - Stop Supabase local development
 - `make db-up` - Run database migrations
 
 ## API Endpoints
@@ -59,9 +61,11 @@ The application will start on `http://localhost:8080` (or the port specified in 
 The template includes a complete REST API with the following endpoints:
 
 ### Health Check
+
 - `GET /health` - Application health status
 
 ### Exported calls for REST client
+
 You can find an exported HAR archive which you can import into a REST client for easily interacting with the API in `./artifacts`
 
 ## Configuration
