@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"prj/models"
-	"prj/services"
+	"flashcard-me/models"
+	"flashcard-me/services"
 
 	"github.com/gorilla/mux"
 )

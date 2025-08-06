@@ -5,10 +5,10 @@ import (
 	"log"
 	"net/http"
 
-	"prj/config"
-	"prj/db"
-	"prj/handlers"
-	"prj/services"
+	"flashcard-me/config"
+	"flashcard-me/db"
+	"flashcard-me/handlers"
+	"flashcard-me/services"
 
 	"github.com/gorilla/mux"
 )
@@ -72,5 +72,3 @@ func healthCheckHandler(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte(`{"status": "healthy"}`))
 }
-
-

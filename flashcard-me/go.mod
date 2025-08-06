@@ -1,4 +1,4 @@
-module prj
+module flashcard-me
 
 go 1.24.0
 
