@@ -1,0 +1,1 @@
+- After each task is complete, I want you to build the project to verify yourwork and then fix any issues which come up
