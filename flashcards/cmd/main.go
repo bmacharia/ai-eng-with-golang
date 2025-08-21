@@ -38,6 +38,12 @@ func main() {
 	noteService := services.NewNoteService(noteRepo)
 	noteHandler := handlers.NewNoteHandler(noteService)
 
+	quizService, err := services.NewQuizService(noteService, cfg.OpenAIAPIKey)
+	if err != nil {
+		log.Fatalf("Failed to initialize quiz service: %v", err)
+	}
+	quizHandler := handlers.NewQuizHandler(quizService)
+
 	router := mux.NewRouter()
 
 	router.Use(corsMiddleware)
@@ -45,6 +51,7 @@ func main() {
 
 	todoHandler.RegisterRoutes(router)
 	noteHandler.RegisterRoutes(router)
+	quizHandler.RegisterRoutes(router)
 
 	router.HandleFunc("/health", healthCheckHandler).Methods("GET")
 
